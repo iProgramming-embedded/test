@@ -64,6 +64,7 @@ struct jt_addition_s
 	unsigned char len;
 	unsigned char *data;
 };
+ //大小端模式，拆包与解包
 #if __BYTE_ORDER == __BIG_ENDIAN
 int pack_be32(char *p, unsigned int val)
 {
