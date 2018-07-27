@@ -16,7 +16,7 @@
 static int gSaveMileage = 0;
 static int gCurMileage =0;
 //声明消息
- struct jt_packet_s
+ struct jt_packet_s   //结构体的高级应用
 {
 	unsigned short id;   //消息ID
 		
