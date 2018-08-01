@@ -65,7 +65,7 @@ struct jt_addition_s
 	unsigned char *data;
 };
  //大小端模式，拆包与解包
-#if __BYTE_ORDER == __BIG_ENDIAN
+#if __BYTE_ORDER == __BIG_ENDIAN   //条件编译
 int pack_be32(char *p, unsigned int val)
 {
 	*((unsigned int *)p) = val;
