@@ -558,7 +558,7 @@ static void dump_jt808_0200(char *data,int len)
         unsigned char mile,id = 0,dlen = 0;
       	struct jt_addition_s *pstate;
         int i=0;
-	ret += unpack_be32(data+ret, &alarm);           //搞明白这个函数的含义
+	ret += unpack_be32(data+ret, &alarm);           
         //后四个字节数据解析点
 	print_0x0200_alarm(alarm);
 	ret += unpack_be32(data+ret, &state_flag);       
